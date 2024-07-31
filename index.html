@@ -1,48 +1,35 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8"/>
-        <title>Profile Card Ui Design</title>
-
-        <link rel="stylesheet" href="style.css">
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
-    </head>
-    
-    <body>
-        <div class="Profile-Card">
-            <a href="#" class="logo"> Profile</a>
-            <nav class="navbar">
-                <a href="#">Home</a>
-                <!-- <a href="#">About</a> -->
-                <a href="#">Skills</a>
-                <a href="#">Contact</a>
-            </nav>
-
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card UI Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="Profile-Card">
+        <div class="profile-details">
+            <a href="#" class="logo">Profile</a>
             <div class="image">
                 <img src="img2.jpg" alt="ganesh img" class="profile-img">
             </div>
-
             <div class="text-data">
-                <span class="name">Helloo... This is </span>
+                <span class="name">Helloo... I'm </span>
+                <div>
                 <span class="name">YELAGANDULA GANESH</span>
-                <!-- <span class="job">Cmrtc Student</span> -->
+                </div>
             </div>
-
             <div class="media-buttons">
                 <a href="https://www.facebook.com/profile.php?id=100011154516242&mibextid=ZbWKwL" target="_blank" style="background-color: blue;" class="link">
                     <i class='bx bxl-facebook'></i>
                 </a>
-
                 <a href="https://www.linkedin.com/in/ganesh-yelagandula-66b98524a" target="_blank" style="background-color: #1da1fe;" class="link">
                     <i class='bx bxl-linkedin'></i>
-                 
                 </a>
-                
                 <a href="https://www.instagram.com/ganesh____0807?utm_source=qr&igsh=MXY2NnZ5M2N6NHI0aQ==" target="_blank" style="background-color: #d91414;" class="link">
                     <i class='bx bxl-instagram'></i>
                 </a>
-
                 <a href="9390813940" target="_blank" style="background-color: #1bbe2b;" class="link">
                     <i class='bx bxl-whatsapp'></i>
                 </a>
@@ -50,29 +37,70 @@
                     <i class='bx bxl-github'></i>
                 </a>
             </div>
-
-            <div class="buttons">
-                <button class="button">About me</button>
-                <!-- <button class="button">Message</button> -->
+            <!-- Navigation Buttons -->
+            <div class="nav-buttons">
+                <button class="nav-btn" data-section="about">About Me</button>
+                <button class="nav-btn" data-section="skills">Skills</button>
+                <button class="nav-btn" data-section="projects">Projects</button>
+                <button class="nav-btn" data-section="contact">Contact</button>
             </div>
-
-            <!-- <div class="analytics">
-                <div class="data">
-                    <i class='bx bx-heart'></i>
-                    <span class="number">60k</span>
-                </div>
-                <div class="data">
-                    <i class='bx bx-message-rounded'></i>
-                    <span class="number">20k</span>
-                </div>
-                <div class="data">
-                    <i class='bx bx-share'></i>
-                    <span class="number">90k</span>
-                </div>
-
-            </div> -->
-
         </div>
-    </body>
 
+        <div class="sections">
+            <!-- Sections -->
+            <div class="section" id="home">
+                <h2>Welcome to My Profile!</h2>
+                <p>This is my profile.</p> <!-- New line added -->
+                <p>This is the home section. Here you can find an overview of who I am and what I do. Explore the sections to know more about my skills and how to contact me.</p>
+            </div>
+            
+            <div class="section active" id="home">
+                <h2>Welcome to My Profile!!!</h2>
+                <p>This is the home section. Here you can find an overview of who I am and what I do. Explore the sections to know more about my skills and how to contact me.</p>
+            </div>
+            <div class="section" id="projects">
+                <!-- <h2>lowde to My Profile!!!</h2>
+                /
+                <p>This is the home section. Here you can find an overview of who I am and what I do. Explore the sections to know more about my skills and how to contact me.</p> -->
+                <div class="cards">
+
+                    <div class="card">
+                        <h2> CALCULATOR</h2>
+                        <img src="calci.png" alt="" width="300px">
+                        <p> Developed a user-friendly calculator application using HTML, CSS, and JavaScript. The application
+                            supports basic arithmetic operations such as addition, subtraction, multiplication, and division. 
+                            </p>
+                        <p><a href="https://github.com/GaneshYelagandula08/Calculator">Project Link</a></p>
+                    </div>
+                    <div class="card">
+                        <h2> A CAR RENTAL WEBSITE</h2>
+                        <img src="car.jpg" alt="" width="300px" >
+                        <p>Offering a seamless platform for customers to easily browse, select, and reserve vehicles, enhancing
+                            accessibility
+                            Efficiency in the rental process</p>
+                        <p><a href="https://github.com/GaneshYelagandula08/Rental-website-">Project Link</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="section" id="skills">
+                <h2>My Skills</h2>
+                <ul>
+                    <li>C</li>
+                    <li>C++</li>
+                    <li>HTML & CSS</li>
+                    <li>PHP & MySQL</li>
+                </ul>
+            </div>
+            <div class="section" id="contact">
+                <h2>Contact Me</h2>
+                <p>Feel free to reach out to me through any of the social media links above or by sending an email to <a href="ganeshyelagandula11@gmail.com">ganeshyelagandula11@gmail.com</a>.</p>
+            </div>
+            <div class="section" id="about">
+                <h2>About Me</h2>
+                <p>As a motivated Computer Science student, I have a strong passion development, with expertise in HTML, CSS, and programming languages like C++, C, and Java. I’m committed to continuous learning, enjoy solving complex problems, and am eager to contribute to innovative projects in a collaborative team environment.</p>
+            </div>
+        </div>
+    </div>
+    <script src="js.js"></script>
+</body>
 </html>
